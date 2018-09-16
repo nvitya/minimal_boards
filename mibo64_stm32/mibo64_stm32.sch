@@ -567,7 +567,7 @@ Text Label 5800 3300 2    50   ~ 0
 PA12
 Text Label 5800 3600 2    50   ~ 0
 PA15
-Text Label 800  4800 0    50   ~ 0
+Text Label 2300 5100 2    50   ~ 0
 RESET
 Text Label 2300 4800 2    50   ~ 0
 BOOT0
@@ -997,7 +997,7 @@ F 3 "" H 10500 2000 50  0001 C CNN
 	1    10500 2000
 	1    0    0    -1  
 $EndComp
-Text Label 800  4900 0    50   ~ 0
+Text Label 2300 5900 2    50   ~ 0
 VBAT
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -1115,7 +1115,7 @@ L Device:C C13
 U 1 1 5BAF0309
 P 3800 2850
 F 0 "C13" H 3915 2896 50  0000 L CNN
-F 1 "1uF" H 3850 2750 50  0000 L CNN
+F 1 "2.2uF" H 3850 2750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 2700 50  0001 C CNN
 F 3 "~" H 3800 2850 50  0001 C CNN
 	1    3800 2850
@@ -1126,7 +1126,7 @@ L Device:C C12
 U 1 1 5BAF0608
 P 3400 2850
 F 0 "C12" H 3515 2896 50  0000 L CNN
-F 1 "1uF" H 3450 2750 50  0000 L CNN
+F 1 "2.2uF" H 3450 2750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3438 2700 50  0001 C CNN
 F 3 "~" H 3400 2850 50  0001 C CNN
 	1    3400 2850
@@ -1225,95 +1225,95 @@ Wire Wire Line
 	4000 3600 3600 3600
 Text Notes 2400 2800 0    50   ~ 0
 0 Ohm resistors\non F0,F1,F2,F3 devices
-Text Label 800  5000 0    50   ~ 0
-PA0
-Text Label 800  5100 0    50   ~ 0
-PA1
-Text Label 800  5200 0    50   ~ 0
-PA2
-Text Label 800  5300 0    50   ~ 0
-PA3
-Text Label 800  5400 0    50   ~ 0
-PA4
-Text Label 800  5500 0    50   ~ 0
-PA5
-Text Label 800  5600 0    50   ~ 0
-PA6
-Text Label 800  5700 0    50   ~ 0
-PA7
-Text Label 800  5800 0    50   ~ 0
-PA8
-Text Label 800  5900 0    50   ~ 0
-PA9
-Text Label 800  6000 0    50   ~ 0
-PA10
-Text Label 800  6100 0    50   ~ 0
-PA11
-Text Label 800  6200 0    50   ~ 0
-PA12
-Text Label 800  6300 0    50   ~ 0
-PA15
-Text Label 2300 5000 2    50   ~ 0
-PB0
-Text Label 2300 5100 2    50   ~ 0
-PB1
-Text Label 2300 5200 2    50   ~ 0
-PB2
-Text Label 2300 5300 2    50   ~ 0
-PB3
 Text Label 2300 5400 2    50   ~ 0
-PB4
-Text Label 2300 5500 2    50   ~ 0
-PB5
-Text Label 2300 5600 2    50   ~ 0
-PB6
-Text Label 2300 5700 2    50   ~ 0
-PB7
-Text Label 2300 5800 2    50   ~ 0
-PB8
-Text Label 2300 5900 2    50   ~ 0
-PB9
-Text Label 2300 6000 2    50   ~ 0
-PB10
-Text Label 2300 6100 2    50   ~ 0
-PB11
-Text Label 2300 6200 2    50   ~ 0
-PB12
-Text Label 2300 6300 2    50   ~ 0
-PB13
-Text Label 2300 6400 2    50   ~ 0
-PB14
-Text Label 2300 6500 2    50   ~ 0
-PB15
+PA0
+Text Label 2300 5300 2    50   ~ 0
+PA1
+Text Label 2300 5200 2    50   ~ 0
+PA2
+Text Label 800  4800 0    50   ~ 0
+PA3
+Text Label 800  4900 0    50   ~ 0
+PA4
+Text Label 800  5000 0    50   ~ 0
+PA5
+Text Label 800  5100 0    50   ~ 0
+PA6
+Text Label 800  5200 0    50   ~ 0
+PA7
+Text Label 800  6800 0    50   ~ 0
+PA8
+Text Label 800  6900 0    50   ~ 0
+PA9
+Text Label 800  7000 0    50   ~ 0
+PA10
+Text Label 800  7100 0    50   ~ 0
+PA11
+Text Label 800  7200 0    50   ~ 0
+PA12
 Text Label 2300 7100 2    50   ~ 0
+PA15
+Text Label 800  5500 0    50   ~ 0
+PB0
+Text Label 800  5600 0    50   ~ 0
+PB1
+Text Label 800  5900 0    50   ~ 0
+PB2
+Text Label 2300 6600 2    50   ~ 0
+PB3
+Text Label 2300 6500 2    50   ~ 0
+PB4
+Text Label 2300 6400 2    50   ~ 0
+PB5
+Text Label 2300 6300 2    50   ~ 0
+PB6
+Text Label 2300 6200 2    50   ~ 0
+PB7
+Text Label 2300 6000 2    50   ~ 0
+PB8
+Text Label 2300 6100 2    50   ~ 0
+PB9
+Text Label 800  5800 0    50   ~ 0
+PB10
+Text Label 800  5700 0    50   ~ 0
+PB11
+Text Label 800  6000 0    50   ~ 0
+PB12
+Text Label 800  6100 0    50   ~ 0
+PB13
+Text Label 800  6200 0    50   ~ 0
+PB14
+Text Label 800  6300 0    50   ~ 0
+PB15
+Text Label 2300 7200 2    50   ~ 0
 PC13
 Text Label 2300 6900 2    50   ~ 0
 PC11
-Text Label 2300 7000 2    50   ~ 0
-PC12
-Text Label 800  6400 0    50   ~ 0
-PC0
-Text Label 800  6500 0    50   ~ 0
-PC1
-Text Label 800  6600 0    50   ~ 0
-PC2
-Text Label 800  6700 0    50   ~ 0
-PC3
-Text Label 800  6800 0    50   ~ 0
-PC4
-Text Label 800  6900 0    50   ~ 0
-PC5
-Text Label 800  7000 0    50   ~ 0
-PC6
-Text Label 800  7100 0    50   ~ 0
-PC7
-Text Label 2300 6600 2    50   ~ 0
-PC8
-Text Label 2300 6700 2    50   ~ 0
-PC9
 Text Label 2300 6800 2    50   ~ 0
+PC12
+Text Label 2300 5800 2    50   ~ 0
+PC0
+Text Label 2300 5700 2    50   ~ 0
+PC1
+Text Label 2300 5600 2    50   ~ 0
+PC2
+Text Label 2300 5500 2    50   ~ 0
+PC3
+Text Label 800  5300 0    50   ~ 0
+PC4
+Text Label 800  5400 0    50   ~ 0
+PC5
+Text Label 800  6400 0    50   ~ 0
+PC6
+Text Label 800  6500 0    50   ~ 0
+PC7
+Text Label 800  6600 0    50   ~ 0
+PC8
+Text Label 800  6700 0    50   ~ 0
+PC9
+Text Label 2300 7000 2    50   ~ 0
 PC10
-Text Label 2300 4900 2    50   ~ 0
+Text Label 2300 6700 2    50   ~ 0
 PD2
 Wire Wire Line
 	1100 6800 800  6800
@@ -1339,9 +1339,9 @@ Wire Wire Line
 	2300 7300 2000 7300
 Wire Wire Line
 	2000 7400 2300 7400
-Text Label 800  7200 0    50   ~ 0
+Text Label 2300 4900 2    50   ~ 0
 PC14
-Text Label 2300 7200 2    50   ~ 0
+Text Label 2300 5000 2    50   ~ 0
 PC15
 Wire Wire Line
 	1100 7200 800  7200
