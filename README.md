@@ -1,6 +1,7 @@
 # Breadboard Friendly Minimal Boards
 
 The project on the Github: [https://github.com/nvitya/minimal_boards](https://github.com/nvitya/minimal_boards)
+
 The boards are developed with KiCAD 5: [http://kicad-pcb.org/](http://kicad-pcb.org/)
 
 ## Board List
