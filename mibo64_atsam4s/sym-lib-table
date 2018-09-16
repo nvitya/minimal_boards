@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name mibo64_atsam4s-rescue)(type Legacy)(uri c:/workvc/github/minimal_boards/mibo64_atsam4s/mibo64_atsam4s-rescue.lib)(options "")(descr ""))
+)
