@@ -455,28 +455,6 @@ F 3 "~" H 10550 3250 50  0001 C CNN
 $EndComp
 Text Label 10200 2400 2    50   ~ 0
 5V
-$Comp
-L Device:R R8
-U 1 1 5BAD065C
-P 9550 3300
-F 0 "R8" V 9343 3300 50  0000 C CNN
-F 1 "22R" V 9450 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9480 3300 50  0001 C CNN
-F 3 "~" H 9550 3300 50  0001 C CNN
-	1    9550 3300
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5BAD078C
-P 9550 3500
-F 0 "R9" V 9650 3500 50  0000 C CNN
-F 1 "22R" V 9450 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9480 3500 50  0001 C CNN
-F 3 "~" H 9550 3500 50  0001 C CNN
-	1    9550 3500
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	10100 3100 10000 3100
 NoConn ~ 10100 3500
@@ -498,12 +476,6 @@ Wire Wire Line
 	10100 3400 9800 3400
 Wire Wire Line
 	9800 3400 9800 3500
-Wire Wire Line
-	9800 3500 9700 3500
-Wire Wire Line
-	9400 3500 9000 3500
-Wire Wire Line
-	9400 3300 9000 3300
 Text Label 9000 3500 0    50   ~ 0
 PA11
 Text Label 9000 3300 0    50   ~ 0
@@ -756,8 +728,6 @@ Text Label 5900 3000 2    50   ~ 0
 PA12
 Text Label 5900 2900 2    50   ~ 0
 PA11
-Wire Wire Line
-	9700 3300 10100 3300
 Text Label 3900 3200 0    50   ~ 0
 PB1
 Text Label 6800 2800 0    50   ~ 0
@@ -828,4 +798,8 @@ F 3 "~" H 2600 5700 50  0001 C CNN
 	1    2600 5700
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	9000 3300 10100 3300
+Wire Wire Line
+	9000 3500 9800 3500
 $EndSCHEMATC
