@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "MIBO20 STM32"
+Title "MIBO20-STM32"
 Date "2018-09-23"
 Rev "V1.0"
 Comp "W. Fried"
