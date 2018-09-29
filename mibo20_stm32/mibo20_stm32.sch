@@ -335,7 +335,7 @@ Text Label 5800 3050 2    50   ~ 0
 PA6
 Text Label 5800 3150 2    50   ~ 0
 PA7
-Text Label 1550 5700 0    50   ~ 0
+Text Label 1100 5700 0    50   ~ 0
 RESET
 Wire Wire Line
 	1300 1650 1500 1650
@@ -502,23 +502,23 @@ Wire Wire Line
 Wire Wire Line
 	1550 5600 1850 5600
 Wire Wire Line
-	1850 5700 1550 5700
+	1150 6000 850  6000
 Wire Wire Line
-	1550 5800 1850 5800
+	1550 5700 1850 5700
 Wire Wire Line
-	1850 5900 1550 5900
+	1850 5800 1550 5800
 Wire Wire Line
-	1550 6000 1850 6000
+	1550 5900 1850 5900
 Wire Wire Line
-	1850 6100 1550 6100
+	1850 6000 1550 6000
 Wire Wire Line
-	1550 6200 1850 6200
+	1550 6100 1850 6100
+Wire Wire Line
+	1850 6200 1550 6200
 Wire Wire Line
 	1850 6300 1550 6300
 Wire Wire Line
-	1850 6400 1550 6400
-Wire Wire Line
-	1550 6500 1850 6500
+	1550 6400 1850 6400
 Wire Wire Line
 	1850 6600 1550 6600
 Wire Wire Line
@@ -625,25 +625,25 @@ Text Label 7600 4550 2    50   ~ 0
 PA11
 Text Label 7600 4650 2    50   ~ 0
 PA12
-Text Label 1550 5800 0    50   ~ 0
+Text Label 1550 5700 0    50   ~ 0
 PA0
-Text Label 1550 5900 0    50   ~ 0
+Text Label 1550 5800 0    50   ~ 0
 PA1
-Text Label 1550 6000 0    50   ~ 0
+Text Label 1550 5900 0    50   ~ 0
 PA2
-Text Label 1550 6100 0    50   ~ 0
+Text Label 1550 6000 0    50   ~ 0
 PA3
-Text Label 1550 6200 0    50   ~ 0
+Text Label 1550 6100 0    50   ~ 0
 PA4
-Text Label 1550 6300 0    50   ~ 0
+Text Label 1550 6200 0    50   ~ 0
 PA5
-Text Label 1550 6400 0    50   ~ 0
+Text Label 1550 6300 0    50   ~ 0
 PA6
 Text Label 6800 4750 0    50   ~ 0
 OSC_IN
 Text Label 6800 4850 0    50   ~ 0
 OSC_OUT
-Text Label 1550 6500 0    50   ~ 0
+Text Label 1550 6400 0    50   ~ 0
 PA7
 $Comp
 L Connector_Generic:Conn_01x13 J2
@@ -819,7 +819,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 6100 3150 6100
 Text Label 3150 6000 2    50   ~ 0
-PB1
+RESET
 Text Label 3150 6100 2    50   ~ 0
 PA9
 Text Label 3150 6200 2    50   ~ 0
@@ -857,4 +857,19 @@ PA13
 Text Label 7600 5050 2    50   ~ 0
 PA14
 Connection ~ 2500 1650
+Text Label 1550 6500 0    50   ~ 0
+PB1
+Wire Wire Line
+	1850 6500 1550 6500
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5BAC57D8
+P 5400 4950
+F 0 "JP1" H 5400 5155 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5400 5064 50  0000 C CNN
+F 2 "" H 5400 4950 50  0001 C CNN
+F 3 "~" H 5400 4950 50  0001 C CNN
+	1    5400 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
