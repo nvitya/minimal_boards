@@ -335,8 +335,6 @@ Text Label 5800 3050 2    50   ~ 0
 PA6
 Text Label 5800 3150 2    50   ~ 0
 PA7
-Text Label 1100 5700 0    50   ~ 0
-RESET
 Wire Wire Line
 	1300 1650 1500 1650
 Wire Wire Line
@@ -402,32 +400,32 @@ $EndComp
 Connection ~ 9550 4950
 Wire Wire Line
 	9650 4550 9650 4650
-Text Label 8850 4650 0    50   ~ 0
+Text Label 7900 4650 0    50   ~ 0
 PA11
-Text Label 8850 4550 0    50   ~ 0
+Text Label 7900 4550 0    50   ~ 0
 PA12
-Text Notes 7450 4000 2    50   ~ 0
+Text Notes 7050 4000 2    50   ~ 0
 Shared functions
 Wire Wire Line
-	6800 4250 7600 4250
+	6400 4250 7200 4250
 Wire Wire Line
-	6800 4350 7600 4350
-Text Label 6800 4250 0    50   ~ 0
+	6400 4350 7200 4350
+Text Label 6400 4250 0    50   ~ 0
 PA12
-Text Label 6800 4350 0    50   ~ 0
+Text Label 6400 4350 0    50   ~ 0
 PA11
-Text Label 7600 4250 2    50   ~ 0
+Text Label 7200 4250 2    50   ~ 0
 USB_D+
-Text Label 7600 4350 2    50   ~ 0
+Text Label 7200 4350 2    50   ~ 0
 USB_D-
 Text Label 3600 4650 2    50   ~ 0
 LED1
-Text Label 7600 4450 2    50   ~ 0
+Text Label 7200 4450 2    50   ~ 0
 LED1
 Wire Wire Line
-	7600 4450 6800 4450
+	7200 4450 6400 4450
 Wire Wire Line
-	7600 4550 6800 4550
+	7200 4550 6400 4550
 $Comp
 L Connector_Generic:Conn_01x04 J5
 U 1 1 5BB736BB
@@ -501,8 +499,6 @@ Wire Wire Line
 	1850 5500 1550 5500
 Wire Wire Line
 	1550 5600 1850 5600
-Wire Wire Line
-	1150 6000 850  6000
 Wire Wire Line
 	1550 5700 1850 5700
 Wire Wire Line
@@ -615,15 +611,15 @@ Text Label 5900 3250 2    50   ~ 0
 PA11
 Text Label 3900 3550 0    50   ~ 0
 PB1
-Text Label 6800 4450 0    50   ~ 0
+Text Label 6400 4450 0    50   ~ 0
 PB1
-Text Label 6800 4550 0    50   ~ 0
+Text Label 6400 4550 0    50   ~ 0
 PA9
-Text Label 6800 4650 0    50   ~ 0
+Text Label 6400 4650 0    50   ~ 0
 PA10
-Text Label 7600 4550 2    50   ~ 0
+Text Label 7200 4550 2    50   ~ 0
 PA11
-Text Label 7600 4650 2    50   ~ 0
+Text Label 7200 4650 2    50   ~ 0
 PA12
 Text Label 1550 5700 0    50   ~ 0
 PA0
@@ -639,9 +635,9 @@ Text Label 1550 6200 0    50   ~ 0
 PA5
 Text Label 1550 6300 0    50   ~ 0
 PA6
-Text Label 6800 4750 0    50   ~ 0
+Text Label 6400 4750 0    50   ~ 0
 OSC_IN
-Text Label 6800 4850 0    50   ~ 0
+Text Label 6400 4850 0    50   ~ 0
 OSC_OUT
 Text Label 1550 6400 0    50   ~ 0
 PA7
@@ -682,12 +678,12 @@ Wire Wire Line
 	2500 2050 2500 1950
 Connection ~ 2500 2050
 Wire Wire Line
-	7600 4750 6800 4750
+	7200 4750 6400 4750
 Wire Wire Line
-	6800 4850 7600 4850
-Text Label 7600 4750 2    50   ~ 0
+	6400 4850 7200 4850
+Text Label 7200 4750 2    50   ~ 0
 PF0
-Text Label 7600 4850 2    50   ~ 0
+Text Label 7200 4850 2    50   ~ 0
 PF1
 Wire Wire Line
 	4700 1750 4700 2250
@@ -773,13 +769,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 1750 5650 1750
 Connection ~ 5400 1750
-Wire Wire Line
-	8850 4550 9150 4550
-Wire Wire Line
-	8850 4650 9150 4650
-Wire Wire Line
-	9150 4350 8850 4350
-Text Label 8850 4350 0    50   ~ 0
+Text Label 7900 4350 0    50   ~ 0
 5V
 Wire Wire Line
 	2000 2650 4100 2650
@@ -843,18 +833,18 @@ Connection ~ 1300 1750
 Wire Wire Line
 	5900 3550 5400 3550
 Wire Wire Line
-	6800 4650 7600 4650
-Text Label 6800 4950 0    50   ~ 0
+	6400 4650 7200 4650
+Text Label 6400 4950 0    50   ~ 0
 SWDIO
-Text Label 6800 5050 0    50   ~ 0
+Text Label 6400 5050 0    50   ~ 0
 SWDCLK
 Wire Wire Line
-	7600 4950 6800 4950
+	7200 4950 6400 4950
 Wire Wire Line
-	6800 5050 7600 5050
-Text Label 7600 4950 2    50   ~ 0
+	6400 5050 7200 5050
+Text Label 7200 4950 2    50   ~ 0
 PA13
-Text Label 7600 5050 2    50   ~ 0
+Text Label 7200 5050 2    50   ~ 0
 PA14
 Connection ~ 2500 1650
 Text Label 1550 6500 0    50   ~ 0
@@ -864,12 +854,41 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5BAC57D8
-P 5400 4950
-F 0 "JP1" H 5400 5155 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 5400 5064 50  0000 C CNN
-F 2 "" H 5400 4950 50  0001 C CNN
-F 3 "~" H 5400 4950 50  0001 C CNN
-	1    5400 4950
+P 8700 4550
+F 0 "JP1" H 8700 4648 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8700 4664 50  0001 C CNN
+F 2 "mibo20_stm32:SolderJumper-2_P0.8mm_Open_RoundedPad0.6x0.8mm" H 8700 4550 50  0001 C CNN
+F 3 "~" H 8700 4550 50  0001 C CNN
+	1    8700 4550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5BB2DDDE
+P 8700 4800
+F 0 "JP2" H 8700 4898 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8700 4914 50  0001 C CNN
+F 2 "mibo20_stm32:SolderJumper-2_P0.8mm_Open_RoundedPad0.6x0.8mm" H 8700 4800 50  0001 C CNN
+F 3 "~" H 8700 4800 50  0001 C CNN
+	1    8700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4550 8850 4550
+Wire Wire Line
+	9150 4650 9050 4650
+Wire Wire Line
+	9050 4650 9050 4800
+Wire Wire Line
+	9050 4800 8850 4800
+Wire Wire Line
+	7900 4550 8550 4550
+Wire Wire Line
+	8550 4800 8400 4800
+Wire Wire Line
+	8400 4800 8400 4650
+Wire Wire Line
+	7900 4650 8400 4650
+Wire Wire Line
+	7900 4350 9150 4350
 $EndSCHEMATC
