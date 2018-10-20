@@ -376,20 +376,9 @@ U 1 1 5BC263EE
 P 10100 2150
 F 0 "C17" H 10215 2196 50  0000 L CNN
 F 1 "4.7uF" H 10150 2050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10138 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10138 2000 50  0001 C CNN
 F 3 "~" H 10100 2150 50  0001 C CNN
 	1    10100 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C16
-U 1 1 5BC2648C
-P 9700 2150
-F 0 "C16" H 9815 2196 50  0000 L CNN
-F 1 "100nF" H 9750 2050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9738 2000 50  0001 C CNN
-F 3 "~" H 9700 2150 50  0001 C CNN
-	1    9700 2150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -398,7 +387,7 @@ U 1 1 5BC26650
 P 12400 2150
 F 0 "C24" H 12515 2196 50  0000 L CNN
 F 1 "4.7uF" H 12450 2050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12438 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12438 2000 50  0001 C CNN
 F 3 "~" H 12400 2150 50  0001 C CNN
 	1    12400 2150
 	1    0    0    -1  
@@ -434,10 +423,6 @@ Wire Wire Line
 	10600 2600 10100 2600
 Wire Wire Line
 	10100 2600 10100 2300
-Wire Wire Line
-	9700 2300 9700 2600
-Wire Wire Line
-	9700 2600 10100 2600
 Connection ~ 10100 2600
 Wire Wire Line
 	10600 1800 10100 1800
@@ -445,8 +430,6 @@ Wire Wire Line
 	10100 1800 10100 2000
 Wire Wire Line
 	10100 1800 9700 1800
-Wire Wire Line
-	9700 1800 9700 2000
 Connection ~ 10100 1800
 Wire Wire Line
 	11300 1700 11200 1700
@@ -475,9 +458,6 @@ Wire Wire Line
 	9700 1800 9400 1800
 Connection ~ 9700 1800
 Wire Wire Line
-	9700 2600 9400 2600
-Connection ~ 9700 2600
-Wire Wire Line
 	12200 2200 10600 2200
 Connection ~ 10600 2200
 Wire Wire Line
@@ -491,7 +471,7 @@ U 1 1 5BC481F9
 P 10850 1800
 F 0 "L2" V 11075 1800 50  0000 C CNN
 F 1 "2.2 uH" V 10984 1800 50  0000 C CNN
-F 2 "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 10850 1800 50  0001 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 10850 1800 50  0001 C CNN
 F 3 "~" H 10850 1800 50  0001 C CNN
 	1    10850 1800
 	0    -1   -1   0   
@@ -594,7 +574,7 @@ U 1 1 5BC6AECF
 P 11950 4500
 F 0 "L3" V 11800 4500 50  0000 C CNN
 F 1 "4.7 uH" V 11900 4500 50  0000 C CNN
-F 2 "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 11950 4500 50  0001 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 11950 4500 50  0001 C CNN
 F 3 "~" H 11950 4500 50  0001 C CNN
 	1    11950 4500
 	0    -1   -1   0   
@@ -607,7 +587,7 @@ U 1 1 5BC70A9B
 P 12300 4650
 F 0 "C23" H 12415 4696 50  0000 L CNN
 F 1 "33uF" H 12350 4550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12338 4500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12338 4500 50  0001 C CNN
 F 3 "~" H 12300 4650 50  0001 C CNN
 	1    12300 4650
 	1    0    0    -1  
@@ -669,7 +649,7 @@ F 3 "~" H 12950 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12700 4000 12700 4500
+	12700 4200 12700 4500
 Wire Wire Line
 	11700 5100 11700 5200
 Text Label 13200 5200 2    50   ~ 0
@@ -791,29 +771,8 @@ Wire Wire Line
 	11700 4100 12000 4100
 Text Label 13150 3500 2    50   ~ 0
 3V3
-$Comp
-L Device:C C22
-U 1 1 5BCBBC39
-P 12300 4150
-F 0 "C22" H 12300 4250 50  0000 L CNN
-F 1 "220nF" H 12300 4050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 12338 4000 50  0001 C CNN
-F 3 "~" H 12300 4150 50  0001 C CNN
-	1    12300 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11700 4300 12300 4300
-Wire Wire Line
-	12300 4000 12700 4000
-Wire Wire Line
-	11700 4200 12100 4200
-Wire Wire Line
-	12100 4200 12100 4000
-Wire Wire Line
-	12100 4000 12300 4000
-Connection ~ 12300 4000
-Connection ~ 12300 4300
 $Comp
 L power:GND #PWR0115
 U 1 1 5BCDB7D4
@@ -831,17 +790,6 @@ Wire Wire Line
 	11700 3400 11850 3400
 Connection ~ 11850 3400
 $Comp
-L Device:C C25
-U 1 1 5BCE548E
-P 12400 3650
-F 0 "C25" H 12515 3696 50  0000 L CNN
-F 1 "220nF" H 12450 3550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 12438 3500 50  0001 C CNN
-F 3 "~" H 12400 3650 50  0001 C CNN
-	1    12400 3650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C28
 U 1 1 5BCE5542
 P 12800 3650
@@ -855,8 +803,6 @@ $EndComp
 Connection ~ 12950 4500
 Wire Wire Line
 	12950 4500 13600 4500
-Wire Wire Line
-	12800 3800 12400 3800
 $Comp
 L power:GND #PWR0116
 U 1 1 5BCF94E2
@@ -868,18 +814,12 @@ F 3 "" H 12800 3800 50  0001 C CNN
 	1    12800 3800
 	1    0    0    -1  
 $EndComp
-Connection ~ 12800 3800
 Wire Wire Line
 	12000 4100 12000 3850
 Wire Wire Line
 	12000 3850 12250 3850
 Wire Wire Line
 	12250 3850 12250 3500
-Wire Wire Line
-	12250 3500 12400 3500
-Connection ~ 12400 3500
-Wire Wire Line
-	12400 3500 12800 3500
 Connection ~ 12800 3500
 Wire Wire Line
 	12800 3500 13150 3500
@@ -892,17 +832,6 @@ Wire Wire Line
 Text Label 6900 2300 0    50   ~ 0
 5V
 $Comp
-L Device:C C1
-U 1 1 5BC39FAB
-P 6000 2550
-F 0 "C1" H 6115 2596 50  0000 L CNN
-F 1 "220nF" H 6050 2450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6038 2400 50  0001 C CNN
-F 3 "~" H 6000 2550 50  0001 C CNN
-	1    6000 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C4
 U 1 1 5BC39FB2
 P 6400 2550
@@ -913,8 +842,6 @@ F 3 "~" H 6400 2550 50  0001 C CNN
 	1    6400 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 2700 6000 2700
 $Comp
 L power:GND #PWR0117
 U 1 1 5BC39FBA
@@ -926,12 +853,8 @@ F 3 "" H 6400 2700 50  0001 C CNN
 	1    6400 2700
 	1    0    0    -1  
 $EndComp
-Connection ~ 6400 2700
-Wire Wire Line
-	6000 2400 6400 2400
 Wire Wire Line
 	7400 2400 6400 2400
-Connection ~ 6400 2400
 NoConn ~ 7400 2700
 Wire Wire Line
 	7400 2500 6900 2500
@@ -1483,93 +1406,93 @@ Wire Wire Line
 	6200 4700 6600 4700
 Text Label 6600 4700 2    50   ~ 0
 3V3
-Text Label 1000 8600 0    50   ~ 0
-E4
-Text Label 1000 8700 0    50   ~ 0
-E5
-Text Label 2800 8400 2    50   ~ 0
-E6
-Text Label 2800 8500 2    50   ~ 0
-E7
-Text Label 2800 8600 2    50   ~ 0
-E8
-Text Label 2800 8700 2    50   ~ 0
-E9
-Text Label 1000 6600 0    50   ~ 0
-E18
-Text Label 1000 6700 0    50   ~ 0
-E19
-Text Label 1000 6800 0    50   ~ 0
-E20
-Text Label 1000 6900 0    50   ~ 0
-E21
-Text Label 1000 7000 0    50   ~ 0
-E22
-Text Label 1000 7100 0    50   ~ 0
-E23
-Text Label 1000 7200 0    50   ~ 0
-E24
-Text Label 1000 7300 0    50   ~ 0
-E25
-Text Label 1000 7400 0    50   ~ 0
-E26
-Text Label 1000 7500 0    50   ~ 0
-E27
-Text Label 1000 7600 0    50   ~ 0
-E32
-Text Label 1000 7700 0    50   ~ 0
-E33
-Text Label 1000 7800 0    50   ~ 0
-E34
-Text Label 1000 7900 0    50   ~ 0
-E35
-Text Label 1000 8000 0    50   ~ 0
-B10
 Text Label 1000 8100 0    50   ~ 0
-B11
-Text Label 1000 8200 0    50   ~ 0
-B12
-Text Label 1000 8300 0    50   ~ 0
-B13
-Text Label 1000 8400 0    50   ~ 0
-B14
-Text Label 1000 8500 0    50   ~ 0
-B15
+E4
+Text Label 1000 8000 0    50   ~ 0
+E5
+Text Label 1000 7900 0    50   ~ 0
+E6
+Text Label 1000 7800 0    50   ~ 0
+E7
+Text Label 1000 7600 0    50   ~ 0
+E8
+Text Label 1000 7700 0    50   ~ 0
+E9
+Text Label 1000 7500 0    50   ~ 0
+E18
+Text Label 1000 7400 0    50   ~ 0
+E19
+Text Label 1000 7300 0    50   ~ 0
+E20
+Text Label 1000 7200 0    50   ~ 0
+E21
+Text Label 1000 7100 0    50   ~ 0
+E22
+Text Label 1000 7000 0    50   ~ 0
+E23
+Text Label 1000 6900 0    50   ~ 0
+E24
+Text Label 1000 6800 0    50   ~ 0
+E25
+Text Label 1000 6700 0    50   ~ 0
+E26
+Text Label 1000 6600 0    50   ~ 0
+E27
 Text Label 2800 6600 2    50   ~ 0
-A4
+E32
 Text Label 2800 6700 2    50   ~ 0
-A5
+E33
 Text Label 2800 6800 2    50   ~ 0
-A6
+E34
 Text Label 2800 6900 2    50   ~ 0
-A7
-Text Label 2800 7000 2    50   ~ 0
-A8
-Text Label 2800 7100 2    50   ~ 0
-A9
-Text Label 2800 7200 2    50   ~ 0
-A10
-Text Label 2800 7300 2    50   ~ 0
-A11
-Text Label 2800 7400 2    50   ~ 0
-A12
-Text Label 2800 7500 2    50   ~ 0
-A13
-Text Label 2800 7600 2    50   ~ 0
-A14
-Text Label 2800 7700 2    50   ~ 0
-A15
-Text Label 2800 7800 2    50   ~ 0
-S0
-Text Label 2800 7900 2    50   ~ 0
-S1
-Text Label 2800 8000 2    50   ~ 0
-S2
+E35
 Text Label 2800 8100 2    50   ~ 0
-S3
-Text Label 2800 8200 2    50   ~ 0
-S4
+B10
+Text Label 2800 8000 2    50   ~ 0
+B11
+Text Label 2800 7900 2    50   ~ 0
+B12
+Text Label 2800 7800 2    50   ~ 0
+B13
+Text Label 2800 7700 2    50   ~ 0
+B14
+Text Label 2800 7600 2    50   ~ 0
+B15
+Text Label 2800 7000 2    50   ~ 0
+A4
+Text Label 2800 7100 2    50   ~ 0
+A5
+Text Label 2800 7200 2    50   ~ 0
+A6
+Text Label 2800 7300 2    50   ~ 0
+A7
+Text Label 2800 7400 2    50   ~ 0
+A8
+Text Label 2800 7500 2    50   ~ 0
+A9
+Text Label 2800 8700 2    50   ~ 0
+A10
+Text Label 2800 8600 2    50   ~ 0
+A11
+Text Label 2800 8500 2    50   ~ 0
+A12
+Text Label 2800 8400 2    50   ~ 0
+A13
 Text Label 2800 8300 2    50   ~ 0
+A14
+Text Label 2800 8200 2    50   ~ 0
+A15
+Text Label 1000 8700 0    50   ~ 0
+S0
+Text Label 1000 8600 0    50   ~ 0
+S1
+Text Label 1000 8500 0    50   ~ 0
+S2
+Text Label 1000 8400 0    50   ~ 0
+S3
+Text Label 1000 8300 0    50   ~ 0
+S4
+Text Label 1000 8200 0    50   ~ 0
 S5
 Text Label 1000 6400 0    50   ~ 0
 GND
@@ -1840,4 +1763,10 @@ Wire Wire Line
 Connection ~ 6550 1100
 Wire Wire Line
 	6550 1100 7400 1100
+Wire Wire Line
+	9400 2600 10100 2600
+Wire Wire Line
+	12250 3500 12800 3500
+Wire Wire Line
+	11700 4200 12700 4200
 $EndSCHEMATC
