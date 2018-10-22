@@ -584,23 +584,23 @@ Wire Wire Line
 $Comp
 L Device:C C23
 U 1 1 5BC70A9B
-P 12300 4650
-F 0 "C23" H 12415 4696 50  0000 L CNN
-F 1 "33uF" H 12350 4550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 12338 4500 50  0001 C CNN
-F 3 "~" H 12300 4650 50  0001 C CNN
-	1    12300 4650
+P 12200 4650
+F 0 "C23" H 12300 4700 50  0000 L CNN
+F 1 "22uF" H 12200 4550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12238 4500 50  0001 C CNN
+F 3 "~" H 12200 4650 50  0001 C CNN
+	1    12200 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5BC70B70
-P 12300 4800
-F 0 "#PWR0111" H 12300 4550 50  0001 C CNN
-F 1 "GND" H 12305 4627 50  0000 C CNN
-F 2 "" H 12300 4800 50  0001 C CNN
-F 3 "" H 12300 4800 50  0001 C CNN
-	1    12300 4800
+P 12400 4800
+F 0 "#PWR0111" H 12400 4550 50  0001 C CNN
+F 1 "GND" H 12405 4627 50  0000 C CNN
+F 2 "" H 12400 4800 50  0001 C CNN
+F 3 "" H 12400 4800 50  0001 C CNN
+	1    12400 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -615,10 +615,7 @@ F 3 "" H 12300 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12300 4500 12100 4500
-Wire Wire Line
-	12700 4500 12300 4500
-Connection ~ 12300 4500
+	12700 4500 12600 4500
 Wire Wire Line
 	12700 4500 12950 4500
 Connection ~ 12700 4500
@@ -635,8 +632,6 @@ F 3 "" H 9700 6500 50  0001 C CNN
 	1    9700 6500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9700 6500 9700 6400
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5BC840F1
@@ -650,8 +645,6 @@ F 3 "~" H 12950 4500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12700 4200 12700 4500
-Wire Wire Line
-	11700 5100 11700 5200
 Text Label 13200 5200 2    50   ~ 0
 DCDC_OUT
 Wire Wire Line
@@ -869,20 +862,13 @@ USB-D+
 Text Label 14500 3200 0    50   ~ 0
 USB-D-
 NoConn ~ 7400 2100
-NoConn ~ 7400 1900
 NoConn ~ 7400 1700
-NoConn ~ 7400 1800
 NoConn ~ 7400 1400
 NoConn ~ 7400 1500
 Wire Wire Line
 	7100 1600 7100 1200
 Wire Wire Line
 	7100 1200 7400 1200
-Connection ~ 9700 3900
-Connection ~ 9700 4000
-Connection ~ 9700 4100
-Connection ~ 9700 4200
-Connection ~ 9700 4300
 $Comp
 L Device:C C6
 U 1 1 5BCE28C9
@@ -1612,52 +1598,6 @@ Wire Wire Line
 	2800 8800 2400 8800
 Wire Wire Line
 	2400 8900 2800 8900
-Wire Wire Line
-	9700 3900 9700 4000
-Wire Wire Line
-	9700 4000 9700 4100
-Wire Wire Line
-	9700 4100 9700 4200
-Wire Wire Line
-	9700 4200 9700 4300
-Wire Wire Line
-	9700 4300 9700 4400
-Wire Wire Line
-	9700 6400 9700 6300
-Connection ~ 9700 6400
-Connection ~ 9700 5700
-Wire Wire Line
-	9700 5700 9700 5600
-Connection ~ 9700 5800
-Wire Wire Line
-	9700 5800 9700 5700
-Connection ~ 9700 5900
-Wire Wire Line
-	9700 5900 9700 5800
-Connection ~ 9700 6000
-Wire Wire Line
-	9700 6000 9700 5900
-Connection ~ 9700 6100
-Wire Wire Line
-	9700 6100 9700 6000
-Connection ~ 9700 6200
-Wire Wire Line
-	9700 6200 9700 6100
-Connection ~ 9700 6300
-Wire Wire Line
-	9700 6300 9700 6200
-Wire Wire Line
-	11700 4700 11700 4800
-Connection ~ 11700 5100
-Connection ~ 11700 4800
-Wire Wire Line
-	11700 4800 11700 4900
-Connection ~ 11700 4900
-Wire Wire Line
-	11700 4900 11700 5000
-Connection ~ 11700 5000
-Wire Wire Line
-	11700 5000 11700 5100
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5C21D69A
@@ -1769,4 +1709,86 @@ Wire Wire Line
 	12250 3500 12800 3500
 Wire Wire Line
 	11700 4200 12700 4200
+Text Label 6900 1800 0    50   ~ 0
+3V3
+Wire Wire Line
+	9700 3900 9700 4000
+NoConn ~ 7400 1900
+Wire Wire Line
+	7400 1800 6900 1800
+Wire Wire Line
+	11700 5100 11700 5200
+Connection ~ 9700 3900
+Wire Wire Line
+	9700 6400 9700 6500
+Wire Wire Line
+	9700 5600 9700 5700
+Connection ~ 9700 6400
+Connection ~ 9700 5700
+Wire Wire Line
+	9700 5700 9700 5800
+Connection ~ 9700 5800
+Wire Wire Line
+	9700 5800 9700 5900
+Connection ~ 9700 5900
+Wire Wire Line
+	9700 5900 9700 6000
+Connection ~ 9700 6000
+Wire Wire Line
+	9700 6000 9700 6100
+Connection ~ 9700 6100
+Wire Wire Line
+	9700 6100 9700 6200
+Connection ~ 9700 6200
+Wire Wire Line
+	9700 6200 9700 6300
+Connection ~ 9700 6300
+Wire Wire Line
+	9700 6300 9700 6400
+Wire Wire Line
+	11700 5100 11700 5000
+Connection ~ 11700 5100
+Connection ~ 11700 4800
+Wire Wire Line
+	11700 4800 11700 4700
+Connection ~ 11700 4900
+Wire Wire Line
+	11700 4900 11700 4800
+Connection ~ 11700 5000
+Wire Wire Line
+	11700 5000 11700 4900
+Wire Wire Line
+	9700 4400 9700 4300
+Connection ~ 9700 4000
+Connection ~ 9700 4100
+Wire Wire Line
+	9700 4100 9700 4000
+Connection ~ 9700 4200
+Wire Wire Line
+	9700 4200 9700 4100
+Connection ~ 9700 4300
+Wire Wire Line
+	9700 4300 9700 4200
+$Comp
+L Device:C C1
+U 1 1 5BDA6739
+P 12600 4650
+F 0 "C1" H 12715 4696 50  0000 L CNN
+F 1 "22uF" H 12600 4550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12638 4500 50  0001 C CNN
+F 3 "~" H 12600 4650 50  0001 C CNN
+	1    12600 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 12600 4500
+Connection ~ 12200 4500
+Wire Wire Line
+	12200 4500 12600 4500
+Wire Wire Line
+	12100 4500 12200 4500
+Wire Wire Line
+	12600 4800 12400 4800
+Connection ~ 12400 4800
+Wire Wire Line
+	12400 4800 12200 4800
 $EndSCHEMATC
