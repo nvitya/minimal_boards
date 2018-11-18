@@ -1,4 +1,4 @@
-update=15/09/2018 09:02:24
+update=15.11.2018 17:48:49
 version=1
 last_client=kicad
 [general]
@@ -58,3 +58,13 @@ SolderMaskClearance=0.2
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
 SolderPasteRatio=0
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
