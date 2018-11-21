@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<configuration name="MIMXRT1021xxxxx" version="1.4" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4 http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4.xsd" uuid="7b2d1676-e260-4a74-836d-2f55aceddc6c" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <common>
+      <processor>MIMXRT1021xxxxx</processor>
+      <package>MIMXRT1021CAF4A</package>
+      <mcu_data>ksdk2_0</mcu_data>
+      <cores selected="core0">
+         <core name="Cortex-M7F" id="core0" description="M7 core"/>
+      </cores>
+      <description></description>
+   </common>
+   <preferences>
+      <validate_boot_init_only>true</validate_boot_init_only>
+      <generate_extended_information>false</generate_extended_information>
+   </preferences>
+   <tools>
+      <pins name="Pins" version="4.1" enabled="true" update_project_code="true">
+         <pins_profile>
+            <processor_version>4.0.0</processor_version>
+            <power_domains/>
+         </pins_profile>
+         <functions_list>
+            <function name="BOARD_InitPins">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>false</callFromInitBoot>
+                  <coreID>core0</coreID>
+                  <enableClock>true</enableClock>
+               </options>
+               <dependencies>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Pins initialization requires the COMMON Driver in the project." problem_level="2" source="Pins.BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.iomuxc" description="Pins initialization requires the IOMUXC Driver in the project." problem_level="2" source="Pins.BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="SUPPLY" signal="usb_otg1_dn" pin_num="41" pin_signal="USB_OTG1_DN"/>
+                  <pin peripheral="SUPPLY" signal="usb_otg1_dp" pin_num="42" pin_signal="USB_OTG1_DP"/>
+                  <pin peripheral="SUPPLY" signal="usb_otg1_vbus" pin_num="38" pin_signal="USB_OTG1_VBUS"/>
+                  <pin peripheral="FLEXSPI" signal="FLEXSPI_A_DATA0" pin_num="11" pin_signal="GPIO_SD_B1_08"/>
+                  <pin peripheral="FLEXSPI" signal="FLEXSPI_A_DATA1" pin_num="9" pin_signal="GPIO_SD_B1_10"/>
+                  <pin peripheral="FLEXSPI" signal="FLEXSPI_A_DATA2" pin_num="10" pin_signal="GPIO_SD_B1_09"/>
+                  <pin peripheral="FLEXSPI" signal="FLEXSPI_A_DATA3" pin_num="13" pin_signal="GPIO_SD_B1_06"/>
+                  <pin peripheral="FLEXSPI" signal="FLEXSPI_A_SCLK" pin_num="12" pin_signal="GPIO_SD_B1_07"/>
+                  <pin peripheral="FLEXSPI" signal="FLEXSPI_A_SS0_B" pin_num="8" pin_signal="GPIO_SD_B1_11"/>
+                  <pin peripheral="JTAG" signal="TMS" pin_num="78" pin_signal="GPIO_AD_B0_00"/>
+                  <pin peripheral="JTAG" signal="TDI" pin_num="75" pin_signal="GPIO_AD_B0_03"/>
+               </pins>
+            </function>
+         </functions_list>
+      </pins>
+   </tools>
+</configuration>
