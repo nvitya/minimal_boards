@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name mibo100_imxrt-rescue)(type Legacy)(uri ${KIPRJMOD}/mibo100_imxrt-rescue.lib)(options "")(descr ""))
 )
