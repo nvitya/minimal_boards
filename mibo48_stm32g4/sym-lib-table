@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name stm32g473)(type Legacy)(uri D:/vitya/github/minimal_boards/mibo48_stm32g4/stm32g473cbt6.lib)(options "")(descr ""))
+)
