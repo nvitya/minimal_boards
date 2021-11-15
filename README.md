@@ -16,5 +16,5 @@ MIBO64-ATSAM4S  | Tested, OK      | For 64 pin QFP ATSAM4SxB Microcontrollers
 MIBO64-ATSAME5X | Tested, OK      | For 64 pin QFP ATSAME5xJ/ATSAMD5x Microcontrollers
 MIBO20-STM32    | Tested, OK      | For the 20 pin TSSOP STM32 Microcontrollers (F030, F070, L011 etc)
 
-
+![assembled boards](minimal_boards.jpg)
 
